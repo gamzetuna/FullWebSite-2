@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/75787b2e4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fullwebsite2.css"> 
+    <script src="jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="ustbar">
+            <div id="iletisim">
+                <div id="phoneMail">
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        e-mail |
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        0555 555 55 55 | X-Store </a>
+                </div>
+                <div id="sosyalmedya">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        facebook |
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        instagram |
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                        YouTube
+                    </a>
+                </div>
+        </div>
+        <div id="xblog">
+            <h1>My X-Blog</h1>
+            <p>Farklı bir X-Blog deneyimi için hazır mısınız?</p>
+        </div>
+        <nav>
+            <div id="menubar">
+                <a href="#">Anasayfa</a>
+                <a href="#">Hakkımızda</a>
+                <a href="#">Ürünler</a>
+                <a href="#">İletişim</a>
+            </div>
+            <input id="aramabutonu" type="text" value="Ara ki bulasın..." />
+        </nav>
+        <section>
+            <div id="panel"> Panel
+                <p> Yönetici Paneli</p>
+                <div id="success" onclick="success()">Success</div>
+                <div id="info"onclick="info()">İnfo</div>
+                <div id="warning" onclick="warning()">Warning</div>
+                <div id="danger" onclick="danger()">Danger</div>
+                <div id="default" onclick="ddefault()">Default</div>
+            </div>
+            <div id="notlar"> 
+                <div id="not1">
+                    <h1>Tatilden Notlar 1</h1>
+                    <img src="https://images.pexels.com/photos/386000/pexels-photo-386000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 300px; width:100%;"/>
+                    <p>What is Lorem Ipsum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque 
+                         autem laboriosam nemo? unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque 
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque  </p>
+                </div>
+                <div id="not2">
+                    <h1>Tatilden Notlar 2</h1>
+                    <img src="https://images.pexels.com/photos/413960/pexels-photo-413960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 300px; width:100%;"/>
+                    <p>What is Lorem Ipsum?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil doloremque doloribus dolor facere, sint nulla neque. ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque autem laboriosam nemo? </p>
+                </div>
+                <div id="not3">
+                    <h1>Tatilden Notlar 3</h1>
+                    <img src="https://images.pexels.com/photos/33622/fashion-model-beach-hat.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 300px; width:100%;"/>
+                    <p>What is Lorem Ipsum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque autem laboriosam nemo? </p>
+                </div>
+                <div id="not4">
+                    <h1>Tatilden Notlar 4</h1>
+                    <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 300px; width:100%;"/>
+                    <p>What is Lorem Ipsum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque autem laboriosam nemo? </p>
+                </div>
+                <div id="not5">
+                    <h1>Tatilden Notlar 5</h1>
+                    <img src="https://images.pexels.com/photos/38302/father-daughter-beach-sea-38302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="height: 300px; width:100%;"/>
+                    <p>What is Lorem Ipsum?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque autem laboriosam nemo? </p>
+                </div>
+            </div>
+        </section>
+        <a class="yukaricik">Top</a>
+        <Footer> FOOTER </Footer>
+      
+<script>
+    function success(){
+    $('#notlar > div').css("display","none");
+    $('#not1').css("display","block");
+}
+function info(){
+    $('#notlar > div').css("display","none");
+    $('#not2').css("display","block");
+}
+function warning(){
+    $('#notlar > div').css("display","none");
+    $('#not3').css("display","block");
+}
+function danger(){
+    $('#notlar > div').css("display","none");
+    $('#not4').css("display","block");
+}
+function ddefault(){
+    $('#notlar > div').css("display","none");
+    $('#not5').css("display","block");
+}
+
+// Top Buton İçin 
+
+var yukari = document.getElementsByClassName("yukaricik")[0];
+
+window.addEventListener("scroll",function(){
+    const mesafe = window.scrollY;// Y eksenin de olan değişiklik için bir işlem yapması gerekiyor. 
+    if(mesafe>300)
+    {
+        yukari.classList.add("goster");
+    }
+    else{
+        yukari.classList.remove("goster");
+    }
+
+});
+yukari.addEventListener('click',function(){
+window.scrollTo(0,0); // scrollTo ile tıklandığında nereye gitmesini istiyorsak konum verdim. 
+});
+
+
+</script>
+    
+</body>
+</html>
